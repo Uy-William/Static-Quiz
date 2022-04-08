@@ -1,0 +1,8 @@
+{
+    "env": {
+        "MONGO_USER": "adminUser",
+        "MONGO_PASSWORD": "testing123",
+        "MONGO_CLUSTER": "Eigital-Assessment",
+        "MONGO_DB": "eigitalData"
+    }
+}

@@ -9,6 +9,7 @@ import SignUp from "./pages/signup/signup";
 import "./App.css";
 
 function App() {
+  // Connecting to the server side
   Axios({
     method: "GET",
     url: "http://localhost:4001/",
@@ -19,6 +20,7 @@ function App() {
     console.log(res.data.message);
   });
 
+  // Route to the designated pages that is defined on the url
 const Routing = () => {
   let routes = useRoutes([
     { path: '/', element: <SignUp />},
@@ -32,7 +34,6 @@ const Routing = () => {
       <Router>
         <Routing />
       </Router>
-      
     </div>
   );
 }
